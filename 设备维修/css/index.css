@@ -1,0 +1,437 @@
+/* 清除元素默认的内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 让所有斜体 不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 去掉列表前面的小点 */
+li {
+    list-style: none;
+}
+
+/* 图片没有边框  去掉图片底侧的空白缝隙 */
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/* 让button 按钮 变成小手 */
+button {
+    cursor: pointer;
+}
+
+/* 取消链接的下划线 */
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e33333;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+body {
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    background: #f3f5f9;
+}
+
+/* 实现rem适配 */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 42.66px !important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 80px !important;
+    }
+}
+
+h1 {
+    padding: .3125rem 0 0 0;
+    text-align: center;
+}
+
+.viewport {
+    display: flex;
+    min-width: 1024px;
+    max-width: 1920px;
+    min-height: 780px;
+    max-width: 0 auto;
+    /* margin-top: .4rem; */
+    padding: 0 .125rem;
+}
+
+.viewport .column {
+    flex: 3;
+}
+
+.viewport .column:nth-child(2) {
+    flex: 4;
+    margin: 0 .25rem;
+}
+
+/* 公共面板 */
+.panel {
+    position: relative;
+    border: 15px solid transparent;
+    /* border-width: .6375rem .475rem .25rem 1.65rem; */
+    /* border-image-source: url(../images/border.png);
+    border-image-slice: 51 38 20 132;
+    border-image-repeat: round; */
+    background: #fff;
+    border-radius: .1875rem;
+}
+
+.column .panel:first-child {
+    margin-bottom: .25rem;
+}
+
+.panel .inner {
+    position: absolute;
+    /* top: -0.6375rem;
+    left: -1.65rem;
+    right: -0.475rem;
+    bottom: -0.25rem; */
+    padding: 0 auto;
+}
+
+.panel h3 {
+    font-size: .25rem;
+    color: #333;
+    font-weight: 700;
+}
+
+
+/* 关键设备区域模块制作 */
+.key_device {
+    height: 7.8125rem !important;
+}
+
+.overview h3 {
+    padding-right: 0.225rem;
+    border-right: 0.025rem solid #00f2f1;
+}
+
+.overview .filter {
+    display: flex;
+}
+
+.overview .detail {
+    position: relative;
+}
+
+.overview .depaetment_pie {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-left: -.25rem;
+    /* float: left; */
+}
+
+.overview .caption {
+    display: flex;
+    line-height: 1;
+}
+
+.overview a {
+    padding: 0.05rem;
+    font-size: 0.2rem;
+    margin: -0.0375rem 0 0 0.2625rem;
+    border-radius: 0.0375rem;
+    color: #0bace6;
+}
+
+.overview a.active {
+    background-color: #4c9bfd;
+    color: #fff;
+}
+
+p .overview .chart {
+    flex: 1;
+    padding-top: 0.1875rem;
+    position: relative;
+}
+
+.overview .chart ul li h4,
+.overview .chart ul li span {
+    color: #333;
+}
+
+
+/* 维修工单区域模块制作 */
+.overview {
+    height: 4.6875rem;
+}
+
+.overview .repair_tabs {
+    margin-bottom: 0.225rem;
+    display: flex;
+}
+
+.overview .repair_tabs a {
+    color: #333333;
+    font-weight: 400;
+    margin: 0 .25rem;
+    padding: 0 .05rem;
+    font-size: .225rem;
+}
+
+.overview .repair_tabs a:first-child {
+    padding-left: 0;
+    border-right: .025rem solid #00f2f1;
+}
+
+.overview .repair_tabs a.active {
+    color: #fff;
+    background-color: #4c9bfd;
+
+}
+
+.overview .total ul li h4,
+.overview .total ul li span {
+    color: #333;
+}
+
+.overview ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .125rem;
+}
+
+.overview ul li {
+    border-radius: .1875rem;
+    padding: .125rem .25rem;
+}
+
+.overview ul li h4 {
+    font-size: .35rem;
+    color: #fff;
+    margin: 0 0 .1rem .06rem;
+}
+
+.overview ul li span {
+    font-size: .2rem;
+    color: #fff;
+}
+
+.overview .content {
+    margin-left: .25rem;
+}
+
+
+/* 维修单统计区域模块制作 */
+.repair_data1 {
+    height: 6.25rem;
+    padding: .125rem;
+}
+
+.repair_data2 {
+    height: 6.25rem;
+    padding: .125rem;
+}
+
+.repair_data .caption {
+    display: flex;
+    line-height: 1;
+}
+
+.repair_data h3 {
+    height: 0.225rem;
+    padding-right: 0.225rem;
+    border-right: 0.025rem solid #00f2f1;
+    color: #333;
+    font-weight: 700;
+}
+
+.repair_data a {
+    padding: 0.05rem;
+    font-size: 0.2rem;
+    margin: -0.0375rem 0 0 0.2625rem;
+    border-radius: 0.0375rem;
+    color: #333;
+}
+
+.repair_data a.active {
+    background-color: #4c9bfd;
+    color: #fff;
+}
+
+.repair_data .inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.repair_data .chart {
+    flex: 1;
+    padding-top: 0.1875rem;
+    position: relative;
+    margin-top: .1875rem;
+}
+
+.repair_data .label {
+    position: absolute;
+    left: 0.525rem;
+    top: 0.225rem;
+    color: #333;
+    font-size: 0.175rem;
+}
+
+.repair_data .line1 {
+    margin-left: -0.5rem;
+    width: 9.375rem;
+    height: 5.625rem;
+}
+
+.repair_data .line2 {
+    width: 9.375rem;
+    height: 5.625rem;
+    margin-left: -.5rem;
+}
+
+/* 监控区域模块制作 */
+.monitor,
+.monitors {
+    height: 6.25rem;
+}
+
+.monitor .inner,
+.monitors .inner {
+    padding: .3rem 0;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: .1875rem;
+    bottom: 0;
+    right: 0;
+}
+
+.monitor .tabs,
+.monitors .tabs {
+    margin-bottom: 0.225rem;
+    display: flex;
+}
+
+.monitor .tabs a,
+.monitors .tabs a {
+    color: #333333;
+    font-weight: 400;
+    padding: 0 .3375rem;
+    font-size: .225rem;
+}
+
+.monitor .tabs a:first-child,
+.monitors .tabs a:first-child {
+    padding-left: 0;
+    border-right: .025rem solid #00f2f1;
+}
+
+.monitor .tabs a.active,
+.monitors .tabs a.active {
+    color: #333;
+    font-weight: 700;
+    font-size: .25rem;
+}
+
+.monitor .content,
+.monitors .content {
+    flex: 1;
+    position: relative;
+    display: none;
+}
+
+.monitors .content .view1 {
+    padding: .15rem .45rem;
+}
+
+.monitor .content .repair_head,
+.monitors .content .repair_head {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.05;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: .15rem .45rem;
+    color: #333;
+    font-size: .175rem;
+}
+
+.monitor .marquee-view,
+.monitors .marquee-view {
+    position: absolute;
+    top: .625rem;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.monitor .content .row,
+.monitors .content .row {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.05;
+    padding: .15rem 0;
+    color: #333;
+    font-size: .15rem;
+}
+
+.monitor .content .row:hover,
+.monitors .content .row:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #333;
+}
+
+.monitor .content .row .col,
+.monitors .content .row .col {
+    /* width: 1rem; */
+    text-align: center;
+}
+
+.monitor .content .row .col:nth-child(2),
+.monitors .content .row .col:nth-child(2) {
+    width: 2.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.monitor .content .row .icon-dot,
+.monitors .content .row .icon-dot {
+    position: absolute;
+    left: .2rem;
+    opacity: 0;
+}
+
+.monitor .content .row:hover .icon-dot,
+.monitors .content .row:hover .icon-dot {
+    opacity: 1;
+}
+
+/* 通过CSS3动画滚动marquee */
+.marquee-view .marquee {
+    animation: move 15s linear infinite;
+}
+
+@keyframes move {
+    0% {}
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+/* 鼠标经过marquee 动画暂停 */
+.marquee-view .marquee:hover {
+    animation-play-state: paused;
+}

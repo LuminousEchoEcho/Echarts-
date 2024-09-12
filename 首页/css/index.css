@@ -1,0 +1,619 @@
+/* 清除元素默认的内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 让所有斜体 不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 去掉列表前面的小点 */
+li {
+    list-style: none;
+}
+
+/* 图片没有边框  去掉图片底侧的空白缝隙 */
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/* 让button 按钮 变成小手 */
+button {
+    cursor: pointer;
+}
+
+/* 取消链接的下划线 */
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e33333;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+body {
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    background: #f3f5f9;
+}
+
+/* 实现rem适配 */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 42.66px !important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 80px !important;
+    }
+}
+
+h1 {
+    padding: .3125rem 0 0 0;
+    text-align: center;
+}
+
+.viewport {
+    display: flex;
+    min-width: 1024px;
+    max-width: 1920px;
+    min-height: 780px;
+    max-width: 0 auto;
+    margin-top: .4rem;
+    padding: 0 .125rem;
+}
+
+.viewport .column {
+    flex: 3;
+}
+
+.viewport .column:nth-child(2) {
+    flex: 4;
+    margin: 0 .25rem;
+}
+
+/* 公共面板 */
+.panel {
+    position: relative;
+    border: 15px solid transparent;
+    /* border-width: .6375rem .475rem .25rem 1.65rem; */
+    /* border-image-source: url(../images/border.png);
+    border-image-slice: 51 38 20 132;
+    border-image-repeat: round; */
+    background: #fff;
+    margin-bottom: .25rem;
+    border-radius: .1875rem;
+}
+
+.panel .inner {
+    position: absolute;
+    /* top: -0.6375rem;
+    left: -1.65rem;
+    right: -0.475rem;
+    bottom: -0.25rem; */
+    padding: 0 auto;
+}
+
+.panel h3 {
+    font-size: .25rem;
+    color: #333;
+    font-weight: 700;
+}
+
+
+/* 概览区域模块制作 */
+.overview {
+    height: 1.6rem;
+    padding: 0 .1875rem;
+}
+
+.overview ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .125rem;
+}
+
+.overview ul li {
+    margin-right: .4rem;
+}
+
+.overview ul li:first-child {
+    margin-left: .2rem;
+}
+
+.overview ul li h4 {
+    font-size: .35rem;
+    color: #000;
+    margin: 0 0 .1rem .06rem;
+}
+
+.overview ul li span {
+    font-size: .2rem;
+    color: #666;
+}
+
+.device {
+    height: 3.125rem;
+}
+
+.device .chart {
+    margin: .25rem 0 .25rem;
+}
+
+.device .pie {
+    width: 4.375rem;
+    height: 2.5rem;
+    /* margin-left: -.625rem; */
+    float: left;
+}
+
+.device .data {
+    float: right;
+    margin-top: .1875rem;
+}
+
+
+/* 维修单统计区域模块制作 */
+.repair_data {
+    height: 4.375rem;
+    padding: .125rem;
+}
+
+.repair_data .caption {
+    display: flex;
+    line-height: 1;
+}
+
+.repair_data h3 {
+    height: 0.225rem;
+    padding-right: 0.225rem;
+    border-right: 0.025rem solid #00f2f1;
+    color: #333;
+    font-weight: 700;
+}
+
+.repair_data a {
+    padding: 0.05rem;
+    font-size: 0.2rem;
+    margin: -0.0375rem 0 0 0.2625rem;
+    border-radius: 0.0375rem;
+    color: #333;
+}
+
+.repair_data a.active {
+    background-color: #4c9bfd;
+    color: #fff;
+}
+
+.repair_data .inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.repair_data .chart {
+    flex: 1;
+    padding-top: 0.1875rem;
+    position: relative;
+    margin-top: .1875rem;
+}
+
+.repair_data .label {
+    position: absolute;
+    left: 0.525rem;
+    top: 0.225rem;
+    color: #333;
+    font-size: 0.175rem;
+}
+
+.repair_data .line {
+    width: 220%;
+    height: 3.125rem;
+}
+
+/* 监控区域模块制作 */
+.monitor {
+    height: 6.85rem;
+}
+
+.monitor1 {
+    height: 7.45rem;
+}
+
+.monitor .inner {
+    padding: .3rem 0;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: .1875rem;
+    bottom: 0;
+    right: 0;
+}
+
+.monitor .tabs {
+    margin-bottom: 0.225rem;
+    display: flex;
+}
+
+.monitor .tabs a {
+    color: #333333;
+    font-weight: 400;
+    padding: 0 .3375rem;
+    font-size: .225rem;
+}
+
+.monitor .tabs a:first-child {
+    padding-left: 0;
+    border-right: .025rem solid #00f2f1;
+}
+
+.monitor .tabs a.active {
+    color: #333;
+    font-weight: 700;
+    font-size: .25rem;
+}
+
+.monitor .content {
+    flex: 1;
+    position: relative;
+    display: none;
+}
+
+.monitor .content .repair_head {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.05;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: .15rem .45rem;
+    color: #333;
+    font-size: .175rem;
+}
+
+.monitor .marquee-view {
+    position: absolute;
+    top: .625rem;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.monitor .marquee-view1 {
+    position: absolute;
+    top: .1875rem;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.monitor .content .row {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.05;
+    padding: .15rem 0;
+    color: #333;
+    font-size: .15rem;
+}
+
+.monitor .content .row:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #333;
+}
+
+.monitor .content .row .col {
+    /* width: 1rem; */
+    text-align: center;
+}
+
+.monitor .content .row .col:nth-child(2) {
+    width: 1.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.monitor .content .row .col:nth-child(3) {
+    width: 2.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.monitor .content .row .icon-dot {
+    position: absolute;
+    left: .2rem;
+    opacity: 0;
+}
+
+.monitor .content .row:hover .icon-dot {
+    opacity: 1;
+}
+
+/* 通过CSS3动画滚动marquee */
+.marquee-view .marquee {
+    animation: move 15s linear infinite;
+}
+
+@keyframes move {
+    0% {}
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+/* 鼠标经过marquee 动画暂停 */
+.marquee-view .marquee:hover {
+    animation-play-state: paused;
+}
+
+/* 点检模块 */
+.point {
+    height: 3.25rem;
+}
+
+.point .chart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.point .pie1 {
+    width: 3.9rem;
+    height: 2.75rem;
+    margin-left: -0.25rem;
+}
+
+.point .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.1rem;
+    margin-top: -.25rem;
+    padding: .45rem .375rem;
+    box-sizing: border-box;
+}
+
+.point h4 {
+    font-size: .3rem;
+    color: #333;
+}
+
+.point span {
+    display: block;
+    color: #4c9bfd;
+    font-size: .2rem;
+    margin-bottom: .125rem;
+
+}
+
+/* 保养模块 */
+.wrap {
+    display: flex;
+}
+
+.channel,
+.quarter {
+    flex: 1;
+    height: 2.9rem;
+}
+
+.channel {
+    margin-left: 0.25rem;
+}
+
+.channel .data {
+    overflow: hidden;
+}
+
+.channel .data .radar {
+    height: 2.1rem;
+    width: 100%;
+    margin-top: .25rem;
+}
+
+.channel h4 {
+    color: #fff;
+    font-size: 0.4rem;
+    margin-bottom: 0.0625rem;
+}
+
+.channel small {
+    font-size: 50%;
+}
+
+.channel span {
+    display: block;
+    color: #4c9bfd;
+    font-size: 0.175rem;
+}
+
+/* 季度区块 */
+.quarter .inner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -0.075rem;
+}
+
+.channel .filter,
+.quarter .filter {
+    display: flex;
+    line-height: 1;
+}
+
+.channel h3,
+.quarter h3 {
+    height: 0.225rem;
+    padding-right: 0.225rem;
+    border-right: 0.025rem solid #00f2f1;
+    color: #333;
+    font-weight: 700;
+}
+
+.channel a,
+.quarter a {
+    padding: 0.05rem;
+    font-size: 0.2rem;
+    margin: -0.0375rem 0 0 0.2625rem;
+    border-radius: 0.0375rem;
+    color: #333;
+}
+
+.channel a.active,
+.quarter a.active {
+    background-color: #4c9bfd;
+    color: #fff;
+}
+
+.quarter .chart {
+    flex: 1;
+    padding-top: 0.25rem;
+    margin: 0 .55rem;
+}
+
+.quarter .box {
+    position: relative;
+}
+
+.quarter .label {
+    transform: translate(-60%, -30%);
+    color: #333;
+    font-size: 0.375rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.quarter .label h4 {
+    float: left;
+}
+
+.quarter .label small {
+    font-size: 50%;
+}
+
+.quarter .gauge {
+    height: 1.05rem;
+}
+
+.quarter .data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quarter .item {
+    width: 75%;
+}
+
+.quarter h4 {
+    color: #333;
+    font-size: 0.3rem;
+    margin-bottom: 0.125rem;
+}
+
+.quarter span {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #4c9bfd;
+    font-size: 0.175rem;
+}
+
+/* 保养日历模块 */
+.calendar {
+    position: relative;
+    width: 100%;
+    height: 5.45rem;
+    background: #fff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    padding: .125rem;
+}
+
+.calendar #prev::before {
+    display: block;
+    position: absolute;
+    content: '';
+    left: .5rem;
+    top: .5rem;
+    width: .625rem;
+    height: .625rem;
+    background: no-repeat center url(../images/prev.png);
+    background-size: 100% 100%;
+}
+
+.calendar #next::after {
+    display: block;
+    position: absolute;
+    content: '';
+    right: .5rem;
+    top: .5rem;
+    width: .625rem;
+    height: .625rem;
+    background: no-repeat center url(../images/next.png);
+    background-size: 100% 100%;
+}
+
+.calendar .body-list ul {
+    width: 100%;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.calendar .body-list ul li {
+    width: 14.28%;
+    height: 36px;
+    line-height: 36px;
+    list-style-type: none;
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+
+.calendar .lightgrey {
+    color: #a8a8a8;
+    /*浅灰色*/
+}
+
+.calendar .darkgrey {
+    color: #565656;
+    /*深灰色*/
+}
+
+.calendar .green {
+    text-align: center;
+    font-size: .5rem;
+    font-weight: 400;
+    color: #6ac13c;
+    /*绿色*/
+    /* margin-top: .625rem; */
+}
+
+.calendar .small {
+    font-weight: normal;
+    font-size: .25rem;
+    margin-top: 0;
+}
+
+.calendar .line {
+    border: 1px solid #e9e9e9;
+    margin-top: .125rem;
+}
+
+.calendar .greenbox {
+    border: 1px solid #6ac13c;
+    background: #e9f8df;
+    /*浅绿色背景*/
+}

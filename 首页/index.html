@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页数据可视化</title>
+    <link rel="stylesheet" href="fonts/icomoon.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/echarts.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="viewport">
+        <div class="column">
+            <!-- 概览区域模块制作 -->
+            <div class="panel overview">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <h4>2190</h4>
+                            <span>
+                                <i class="icon-dot"></i>
+                                设备总数
+                            </span>
+                        </li>
+                        <li>
+                            <h4>1895</h4>
+                            <span>
+                                <i class="icon-dot" style="color: #6acca3;"></i>
+                                运营设备
+                            </span>
+                        </li>
+                        <li>
+                            <h4>68</h4>
+                            <span>
+                                <i class="icon-dot" style="color: #6acca3;"></i>
+                                闲置设备
+                            </span>
+                        </li>
+                        <li>
+                            <h4>14</h4>
+                            <span>
+                                <i class="icon-dot" style="color: #ed3f35;"></i>
+                                异常设备
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel device">
+                <h3>设备状态</h3>
+                <div class="chart">
+                    <div class="pie"></div>
+                    <div class="data">
+                        <div class="item">
+                            <h4>98.47%</h4>
+                            <span>
+                                <i class="icon-dot" style="color: #ed3f35"></i>
+                                设备使用率%
+                            </span>
+                        </div>
+                        <div class="item">
+                            <h4>418</h4>
+                            <span>
+                                <i class="icon-dot" style="color: #eacf19"></i>
+                                本月新增
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 零配件监控区域模块制作 -->
+            <div class="panel monitor">
+                <div class="inner">
+                    <div class="tabs">
+                        <a href="javasrcipt:;" class="active">维修零配件更换</a>
+                        <a href="javasrcipt:;">保养零配件更换</a>
+                    </div>
+                    <div class="content" style="display: block;">
+                        <div class="repair_head">
+                            <span class="col">维修单号</span>
+                            <span class="col">集团级编码</span>
+                            <span class="col">零配件名称</span>
+                            <span class="col">更换数量</span>
+                        </div>
+                        <div class="marquee-view">
+                            <div class="marquee">
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">1</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content" style="display: none;">
+                        <div class="repair_head">
+                            <span class="col">保养单号</span>
+                            <span class="col">集团级编码</span>
+                            <span class="col">零配件名称</span>
+                            <span class="col">更换数量</span>
+                        </div>
+                        <div class="marquee-view">
+                            <div class="marquee">
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">1</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">24-04-2645</span>
+                                    <span class="col">1500003648</span>
+                                    <span class="col">夹头|宏友研磨机万向夹头|HY-WXJT-01</span>
+                                    <span class="col">2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <!-- 维修工单统计区域模块制作 -->
+            <div class="repair_data panel">
+                <div class="inner">
+                    <div class="caption">
+                        <h3>维修单统计</h3>
+                        <a href="javascript:;" class="active" data-type="year">年</a>
+                        <a href="javascript:;" data-type="quarter">季</a>
+                        <a href="javascript:;" data-type="month">月</a>
+                        <a href="javascript:;" data-type="week">周</a>
+                    </div>
+                    <div class="chart">
+                        <div class="label">单位:单</div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 维修工单监控区域模块制作 -->
+            <div class="panel monitor monitor1">
+                <div class="inner">
+                    <div class="tabs">
+                        <a href="javasrcipt:;" class="active">本月故障次数排名</a>
+                        <a href="javasrcipt:;">本月维修时间排名</a>
+                    </div>
+                    <div class="content" style="display: block;">
+                        <div class="marquee-view marquee-view1">
+                            <div class="marquee">
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">15</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">15</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">15</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">15</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">15</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">15</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">15</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">15</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">15</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content" style="display: none;">
+                        <div class="marquee-view marquee-view1">
+                            <div class="marquee">
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">1小时53分</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">1小时53分</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">1小时53分</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">1小时53分</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">1小时53分</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">1小时53分</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">1小时53分</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">1小时53分</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">1小时53分</span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">一铜科/PTH1线<去毛刺除胶渣连沉铜线></span>
+                                    <span class="col">1小时53分</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <!-- 点检模块 -->
+            <div class="point panel">
+                <div class="inner">
+                    <h3>设备点检</h3>
+                    <div class="chart">
+                        <div class="pie1"></div>
+                        <div class="data">
+                            <div class="item">
+                                <h4>320</h4>
+                                <span>
+                                    <i class="icon-dot" style="color: #ed3f35"></i>
+                                    今日
+                                </span>
+                            </div>
+                            <div class="item">
+                                <h4>118</h4>
+                                <span>
+                                    <i class="icon-dot" style="color: #eacf19"></i>
+                                    今日未完成
+                                </span>
+                            </div>
+                            <div class="item">
+                                <h4>45</h4>
+                                <span>
+                                    <i class="icon-dot" style="color: #6acca3"></i>
+                                    逾期
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 保养模块 -->
+            <div class="wrap">
+                <div class="quarter panel">
+                    <div class="inner">
+                        <div class="filter">
+                            <h3>保养完成率</h3>
+                            <a href="javascript:;" class="active" data-type="year">本月</a>
+                            <a href="javascript:;" data-type="quarter">上月</a>
+                        </div>
+                        <div class="chart">
+                            <div class="box">
+                                <div class="gauge"></div>
+                                <div class="label">
+                                    <h4></h4><small> %</small>
+                                </div>
+                            </div>
+                            <div class="data">
+                                <div class="item">
+                                    <h4></h4>
+                                    <span>
+                                        <i class="icon-dot" style="color: #6acca3"></i>
+                                        保养单(单)
+                                    </span>
+                                </div>
+                                <div class="item">
+                                    <h4></h4>
+                                    <span>
+                                        <i class="icon-dot" style="color: #ed3f35"></i>
+                                        及时率
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="channel panel">
+                    <div class="inner">
+                        <div class="filter">
+                            <h3>保养任务</h3>
+                            <a href="javascript:;" class="active" data-type="year">本月</a>
+                            <a href="javascript:;" data-type="quarter">上月</a>
+                        </div>
+                        <div class="data">
+                            <div class="radar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 保养日历模块 -->
+            <div class="calendar panel">
+                <div class="inner">
+                    <h3>保养日历</h3>
+                    <div class="title">
+                        <h2 class="green" id="calendar-title">Month</h2>
+                        <h2 class="green small" id="calendar-year">Year</h2>
+                        <a href="javascript:;" id="prev"></a>
+                        <a href="javascript:;" id="next"></a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="body">
+                        <div class="lightgrey body-list">
+                            <ul>
+                                <li>MON</li>
+                                <li>TUE</li>
+                                <li>WED</li>
+                                <li>THU</li>
+                                <li>FRI</li>
+                                <li>SAT</li>
+                                <li>SUN</li>
+                            </ul>
+                        </div>
+                        <div class="darkgrey body-list">
+                            <ul id="days">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
